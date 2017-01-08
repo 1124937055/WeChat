@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OAuthSnsApiBase</title>
+</head>
+<body>
+    <h1>OAuthSnsApiBase</h1>
+    @if (ViewData["errmsg"] != null)
+    {
+        <h1>@ViewData["errmsg"]</h1>
+    }
+    else
+    {
+        <h2>@ViewData["nickName"]</h2>
+        <h2>@ViewData["sex"]</h2>
+        <h2>@ViewData["province"]</h2>
+        <h2>@ViewData["city"]</h2>
+        <h2>@ViewData["headImage"]</h2>
+    }
+</body>
+</html>
